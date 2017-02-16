@@ -1,0 +1,28 @@
+#!/bin/sh
+sudo yum update -y
+sudo pip install flask
+
+cd ~
+sudo mkdir pixel-server
+cd pixel-server
+sudo mkdir app
+cd app
+
+sudo aws s3 sync s3://cbanisi-pixel-challenge/ ./
+tar -xvf pixel-server.tar
+
+sudo chmod 0644 logrotate.conf
+sudo chmod 0644 crontab
+sudo mv logrotate.conf /etc/
+sudo mv crontab /etc/
+
+cd /var/log
+sudo mkdir pixel-server
+cd pixel-server
+sudo mkdir logs
+cd logs
+sudo touch pixel.log
+sudo chmod a+w pixel.log
+
+cd ~/pixel-server/app/
+python PixelServer.py &
