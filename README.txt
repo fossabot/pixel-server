@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcbanisi%2Fpixel-server.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcbanisi%2Fpixel-server?ref=badge_shield)
+
 README
 ----------------------
 Pixel Server - Code Challenge
@@ -24,3 +26,6 @@ For Even Further Improvements (choose one of the following):
 	*Use AWS OpsWorks to manage config setup (i.e. Flask installation)
 	*Use AWS CloudFormation to create template for entire application
 	*Use AWS CodeCommit/CodeBuild/CodeDeploy to automate deployments of new versions
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcbanisi%2Fpixel-server.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcbanisi%2Fpixel-server?ref=badge_large)
